@@ -11,19 +11,88 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int peregrineintro=0x7f020001;
+        public static final int loadscreen=0x7f020000;
+        public static final int peregrinepilot_flightcontrol=0x7f020001;
+        public static final int peregrinepilot_land_menubg=0x7f020002;
+        public static final int peregrinepilot_launcher=0x7f020003;
+        public static final int peregrinepilot_menubg=0x7f020004;
     }
     public static final class id {
-        public static final int beginButton=0x7f050002;
-        public static final int imageView2=0x7f050001;
-        public static final int textView1=0x7f050000;
+        public static final int LinearLayout01=0x7f05000e;
+        public static final int LinearLayout02=0x7f050010;
+        public static final int LinearLayout03=0x7f050008;
+        public static final int LinearLayout04=0x7f05000a;
+        public static final int LinearLayout05=0x7f050004;
+        public static final int LinearLayout06=0x7f050006;
+        public static final int LinearLayout07=0x7f050003;
+        public static final int LinearLayout08=0x7f05000c;
+        public static final int LinearLayout09=0x7f050029;
+        public static final int LinearLayout10=0x7f050037;
+        public static final int LinearLayout11=0x7f050035;
+        public static final int LinearLayout12=0x7f050033;
+        public static final int LinearLayout13=0x7f050031;
+        public static final int LinearLayout14=0x7f05002f;
+        public static final int LinearLayout15=0x7f05002d;
+        public static final int LinearLayout16=0x7f05001c;
+        public static final int LinearLayout17=0x7f05001a;
+        public static final int LinearLayout18=0x7f050018;
+        public static final int LinearLayout19=0x7f050016;
+        public static final int LinearLayout20=0x7f050014;
+        public static final int LinearLayout21=0x7f050012;
+        public static final int TextView01=0x7f05000f;
+        public static final int TextView02=0x7f050022;
+        public static final int TextView03=0x7f05000b;
+        public static final int TextView04=0x7f050024;
+        public static final int TextView05=0x7f050011;
+        public static final int TextView06=0x7f050026;
+        public static final int TextView07=0x7f050005;
+        public static final int TextView08=0x7f050028;
+        public static final int TextView09=0x7f050007;
+        public static final int TextView10=0x7f05002c;
+        public static final int TextView11=0x7f050009;
+        public static final int TextView12=0x7f05000d;
+        public static final int TextView13=0x7f05002a;
+        public static final int TextView14=0x7f050036;
+        public static final int TextView15=0x7f050038;
+        public static final int TextView16=0x7f050032;
+        public static final int TextView17=0x7f050034;
+        public static final int TextView18=0x7f05002e;
+        public static final int TextView19=0x7f050030;
+        public static final int TextView20=0x7f05001b;
+        public static final int TextView21=0x7f05001d;
+        public static final int TextView22=0x7f050017;
+        public static final int TextView23=0x7f050019;
+        public static final int TextView24=0x7f050013;
+        public static final int TextView25=0x7f050015;
+        public static final int button1=0x7f05003c;
+        public static final int button2=0x7f05003a;
+        public static final int button3=0x7f05003b;
+        public static final int digitalClock1=0x7f050020;
+        public static final int field1=0x7f05001f;
+        public static final int field2=0x7f050021;
+        public static final int field3=0x7f050023;
+        public static final int field4=0x7f050025;
+        public static final int field5=0x7f050027;
+        public static final int field6=0x7f05002b;
+        public static final int imageView1=0x7f050039;
+        public static final int linearLayout1=0x7f05001e;
+        public static final int relativeLayout1=0x7f050000;
+        public static final int textView1=0x7f050002;
+        public static final int textView2=0x7f050001;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
+        public static final int about=0x7f030000;
+        public static final int configure=0x7f030001;
+        public static final int flight=0x7f030002;
+        public static final int main=0x7f030003;
     }
     public static final class string {
         public static final int app_name=0x7f040001;
+        public static final int button1_flight=0x7f040002;
+        public static final int button2_configure=0x7f040003;
+        public static final int button3_aboutus=0x7f040004;
         public static final int hello=0x7f040000;
+        public static final int string_aboutpe=0x7f040005;
+        public static final int string_aboutpe2=0x7f040006;
     }
 }

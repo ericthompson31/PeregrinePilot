@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:gravity="left"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout07"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="117"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="fill_horizontal|left" >
+
+            <TextView
+                android:id="@+id/TextView07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Local Time:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ArduCopter ID:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Signal Strength:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout08"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---------------------------"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Range:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altitude:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="117" >
+
+            <TextView
+                android:id="@+id/TextView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speed:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="117" >
+
+            <TextView
+                android:id="@+id/TextView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battery Voltage:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="117" >
+
+            <TextView
+                android:id="@+id/TextView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heading:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="117" >
+
+            <TextView
+                android:id="@+id/TextView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dist. to Waypoint:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="117" >
+
+            <TextView
+                android:id="@+id/TextView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Flight Time:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="117" >
+
+            <TextView
+                android:id="@+id/TextView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Flight Time:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="117"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/field1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="fill_horizontal|left" >
+
+            <DigitalClock
+                android:id="@+id/digitalClock1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="117"
+                android:text="DigitalClock" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/field2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Value"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/field3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Value"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/field4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Value"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/field5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--------------------"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout09"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="117" >
+
+            <TextView
+                android:id="@+id/TextView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Value"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/field6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Value"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="117" >
+
+            <TextView
+                android:id="@+id/TextView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Value"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="117" >
+
+            <TextView
+                android:id="@+id/TextView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Value"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="117" >
+
+            <TextView
+                android:id="@+id/TextView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Value"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="117" >
+
+            <TextView
+                android:id="@+id/TextView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Value"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="117" >
+
+            <TextView
+                android:id="@+id/TextView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Value"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="117" >
+
+            <TextView
+                android:id="@+id/TextView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Value"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peregrinepilot_flightcontrol" />
+
+</LinearLayout>

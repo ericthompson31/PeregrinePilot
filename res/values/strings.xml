@@ -3,5 +3,10 @@
 
     <string name="hello">Hello World, PeregrinePilotActivity!</string>
     <string name="app_name">Peregrine Pilot</string>
+    <string name="button1_flight">Flight</string>
+    <string name="button2_configure">Configure</string>
+    <string name="button3_aboutus">About Peregrine Engineering</string>
+    <string name="string_aboutpe">Peregrine Engineering was established way back in August of 2011.  For hundreds of days the founders, Doug, Jason, and Eric, have been working on flying an ArduCopter with an Android device.</string>
+    <string name="string_aboutpe2">Their efforts are under the tutelage of Joe Evans, Distinguished Professor at the University of Kansas.</string>
 
 </resources>
