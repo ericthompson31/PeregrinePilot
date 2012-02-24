@@ -45,6 +45,7 @@
             android:layout_marginRight="100dp"
             android:onClick="flight"
             android:text="@string/button1_flight" />
+
     </RelativeLayout>
 
 </LinearLayout>
