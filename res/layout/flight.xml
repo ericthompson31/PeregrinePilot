@@ -3,418 +3,437 @@
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:baselineAligned="true"
-    android:gravity="left"
-    android:orientation="horizontal" >
+    android:gravity="bottom|left"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.02" >
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="117"
-        android:orientation="vertical" >
-
         <LinearLayout
-            android:id="@+id/linearLayout2"
+            android:id="@+id/linearLayout7"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
             <LinearLayout
-                android:id="@+id/LinearLayout07"
-                android:layout_width="300dp"
+                android:id="@+id/linearLayout3"
+                android:layout_width="276dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="117"
                 android:orientation="vertical" >
 
                 <LinearLayout
-                    android:id="@+id/LinearLayout05"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="fill_horizontal|left" >
-
-                    <TextView
-                        android:id="@+id/TextView07"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Local Time:"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout06"
-                    android:layout_width="match_parent"
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="272dp"
                     android:layout_height="wrap_content" >
 
-                    <TextView
-                        android:id="@+id/TextView09"
+                    <LinearLayout
+                        android:id="@+id/LinearLayout07"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ArduCopter ID:"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
+                        android:layout_weight="0.33"
+                        android:orientation="vertical" >
 
-                <LinearLayout
-                    android:id="@+id/LinearLayout03"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                        <LinearLayout
+                            android:id="@+id/LinearLayout05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="fill_horizontal|left" >
 
-                    <TextView
-                        android:id="@+id/TextView11"
+                            <TextView
+                                android:id="@+id/TextView07"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Local Time:"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout06"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/TextView09"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ArduCopter ID:"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/TextView11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Signal Strength:"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/TextView03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mode:"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout08"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/TextView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="---------------------------"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/TextView01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Range:"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/TextView05"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Altitude:"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="117" >
+
+                            <TextView
+                                android:id="@+id/TextView24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Speed:"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="117" >
+
+                            <TextView
+                                android:id="@+id/TextView25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Battery Voltage:"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="117" >
+
+                            <TextView
+                                android:id="@+id/TextView22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Heading:"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="117" >
+
+                            <TextView
+                                android:id="@+id/TextView23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dist. to Waypoint:"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="117" >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Signal Strength:"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
+                        android:layout_weight="0.33"
+                        android:orientation="vertical" >
 
-                <LinearLayout
-                    android:id="@+id/LinearLayout04"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                        <LinearLayout
+                            android:id="@+id/field1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="fill_horizontal|left" >
 
-                    <TextView
-                        android:id="@+id/TextView03"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Mode:"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
+                            <DigitalClock
+                                android:id="@+id/digitalClock1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="117"
+                                android:text="DigitalClock" />
+                        </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/LinearLayout08"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                        <LinearLayout
+                            android:id="@+id/field2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
 
-                    <TextView
-                        android:id="@+id/TextView12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="---------------------------"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
+                            <TextView
+                                android:id="@+id/TextView02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#Value"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/LinearLayout01"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                        <LinearLayout
+                            android:id="@+id/field3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
 
-                    <TextView
-                        android:id="@+id/TextView01"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Range:"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
+                            <TextView
+                                android:id="@+id/TextView04"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#Value"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/LinearLayout02"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                        <LinearLayout
+                            android:id="@+id/field4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
 
-                    <TextView
-                        android:id="@+id/TextView05"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Altitude:"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
+                            <TextView
+                                android:id="@+id/TextView06"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#Value"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/LinearLayout21"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="117" >
+                        <LinearLayout
+                            android:id="@+id/field5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
 
-                    <TextView
-                        android:id="@+id/TextView24"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Speed:"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
+                            <TextView
+                                android:id="@+id/TextView08"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="--------------------"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/LinearLayout20"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="117" >
+                        <LinearLayout
+                            android:id="@+id/LinearLayout09"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="117" >
 
-                    <TextView
-                        android:id="@+id/TextView25"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Battery Voltage:"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
+                            <TextView
+                                android:id="@+id/TextView13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#Value"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/LinearLayout19"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="117" >
+                        <LinearLayout
+                            android:id="@+id/field6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
 
-                    <TextView
-                        android:id="@+id/TextView22"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Heading:"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
+                            <TextView
+                                android:id="@+id/TextView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#Value"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/LinearLayout18"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="117" >
+                        <LinearLayout
+                            android:id="@+id/LinearLayout15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="117" >
 
-                    <TextView
-                        android:id="@+id/TextView23"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Dist. to Waypoint:"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
+                            <TextView
+                                android:id="@+id/TextView18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#Value"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/LinearLayout17"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="117" >
+                        <LinearLayout
+                            android:id="@+id/LinearLayout14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="117" >
 
-                    <TextView
-                        android:id="@+id/TextView20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Current Flight Time:"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
+                            <TextView
+                                android:id="@+id/TextView19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#Value"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/LinearLayout16"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="117" >
+                        <LinearLayout
+                            android:id="@+id/LinearLayout13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="117" >
 
-                    <TextView
-                        android:id="@+id/TextView21"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Total Flight Time:"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                            <TextView
+                                android:id="@+id/TextView16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#Value"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="117" >
+
+                            <TextView
+                                android:id="@+id/TextView17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#Value"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="117" >
+                        </LinearLayout>
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="244dp"
+                android:layout_height="match_parent" >
 
-            <LinearLayout
-                android:id="@+id/linearLayout1"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="117"
-                android:orientation="vertical" >
-
-                <LinearLayout
-                    android:id="@+id/field1"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/accText"
+                    android:layout_width="243dp"
                     android:layout_height="wrap_content"
-                    android:gravity="fill_horizontal|left" >
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="xyzAccelerometer"
+                    android:textAppearance="?android:attr/textAppearanceLarge" android:layout_marginLeft="10dp"/>
 
-                    <DigitalClock
-                        android:id="@+id/digitalClock1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="117"
-                        android:text="DigitalClock" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/field2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-
-                    <TextView
-                        android:id="@+id/TextView02"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#Value"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/field3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-
-                    <TextView
-                        android:id="@+id/TextView04"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#Value"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/field4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-
-                    <TextView
-                        android:id="@+id/TextView06"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#Value"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/field5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-
-                    <TextView
-                        android:id="@+id/TextView08"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="--------------------"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout09"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="117" >
-
-                    <TextView
-                        android:id="@+id/TextView13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#Value"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/field6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-
-                    <TextView
-                        android:id="@+id/TextView10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#Value"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout15"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="117" >
-
-                    <TextView
-                        android:id="@+id/TextView18"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#Value"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout14"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="117" >
-
-                    <TextView
-                        android:id="@+id/TextView19"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#Value"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout13"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="117" >
-
-                    <TextView
-                        android:id="@+id/TextView16"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#Value"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout12"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="117" >
-
-                    <TextView
-                        android:id="@+id/TextView17"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#Value"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="117" >
-
-                    <TextView
-                        android:id="@+id/TextView14"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#Value"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/LinearLayout10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="117" >
-
-                    <TextView
-                        android:id="@+id/tracking"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="mTrackingText"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
-            </LinearLayout>
+            </RelativeLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout4"
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="0dp"
-            android:layout_marginTop="20dp"
-            android:layout_weight="0.61"
-            android:gravity="bottom" >
-
-            <SeekBar
-                android:id="@+id/seek"
-                android:layout_width="170dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout7"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25dp" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.41" />
+                android:layout_marginLeft="10dp" android:layout_marginTop="20dp">
 
-            <TextView
-                android:id="@+id/progress"
-                android:layout_width="42dp"
+                <TextView
+                    android:id="@+id/TextView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:text="Throttle Status:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/tracking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.56"
+                    android:text="mTrackingText"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="280dp"
-        android:layout_height="match_parent"
-        android:src="@drawable/peregrinepilot_flightcontrol" />
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="5dp"
+                android:gravity="bottom" >
+
+                <SeekBar
+                    android:id="@+id/seek"
+                    android:layout_width="322dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.14"/>
+
+                <TextView
+                    android:id="@+id/progress"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.42"
+                    android:textSize="40sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
 
 </LinearLayout>
