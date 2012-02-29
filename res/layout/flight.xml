@@ -357,22 +357,47 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
-
-            <RelativeLayout
-                android:id="@+id/relativeLayout1"
-                android:layout_width="244dp"
-                android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|top"
+                android:orientation="vertical" >
 
+                <TextView
+                    android:id="@+id/TextView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accelerometer Raw Values (X, Y, Z):" />
+
                 <TextView
                     android:id="@+id/accText"
                     android:layout_width="243dp"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true"
                     android:text="xyzAccelerometer"
-                    android:textAppearance="?android:attr/textAppearanceLarge" android:layout_marginLeft="10dp"/>
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
 
-            </RelativeLayout>
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Direct Mode:" />
+
+                <TextView
+                    android:id="@+id/directmodeFB "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/directmodeLR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
         </LinearLayout>
 
         <RelativeLayout

@@ -3,45 +3,13 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
-        android:background="@drawable/peregrinepilot_land_menubg" >
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp"
-            android:text="@string/string_aboutpe"
-            android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="15sp"/>
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView1"
-            android:layout_below="@+id/textView1"
-            android:layout_marginTop="15dp"
-            android:text="@string/string_aboutpe2"
-            android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="15sp"/>
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView2"
-            android:layout_below="@+id/textView2"
-            android:layout_marginTop="20dp"
-            android:text="Peregrine Engineering (Not a registered trademark by any stretch of the imagination) is not responsible for an improperly working application.  By reading this, you agree to use this software at your own risk.  It is not avisable to fly a helicopter indoors."
-            android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="15sp"/>
-
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.97"
+        android:text="@string/about"
+        android:layout_marginLeft="10dp" />
 
 </LinearLayout>
