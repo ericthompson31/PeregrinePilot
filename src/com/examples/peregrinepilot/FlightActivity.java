@@ -25,6 +25,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.view.WindowManager.LayoutParams;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -40,7 +41,8 @@ public class FlightActivity extends Activity implements
 	private TextView accText;
 	private TextView directmodeTextLR;
 	private TextView directmodeTextFB;
-	//private TextView stagesmodeText;
+	private TextView stagesmodeTextLR;
+	private TextView stagesmodeTextFB;
 	private SensorManager myManager;
 	private List<Sensor> sensors;
 	private Sensor accSensor;
@@ -49,19 +51,22 @@ public class FlightActivity extends Activity implements
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
+		getWindow().addFlags(LayoutParams.FLAG_FULLSCREEN | LayoutParams.FLAG_KEEP_SCREEN_ON);
 		setContentView(R.layout.flight);
 
+		//throttle values
 		mSeekBar = (SeekBar) findViewById(R.id.seek);
 		mSeekBar.setOnSeekBarChangeListener(this);
 		mProgressText = (TextView) findViewById(R.id.progress);
 		mProgressText.setText("");
 		mTrackingText = (TextView) findViewById(R.id.tracking);
 		mTrackingText.setText("Ready");
-
+		//accelerometer values
 		accText = (TextView) findViewById(R.id.accText);
 		directmodeTextLR = (TextView) findViewById(R.id.directmodeLR);
 		directmodeTextFB = (TextView) findViewById(R.id.directmodeFB);
+		stagesmodeTextLR = (TextView) findViewById(R.id.stagesmodeLR);
+		stagesmodeTextFB = (TextView) findViewById(R.id.stagesmodeFB);
 
 		// Set Sensor + Manager
 		myManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
@@ -91,17 +96,16 @@ public class FlightActivity extends Activity implements
      float thisY = y - oldY * 10;
      float thisZ = z - oldZ * 10;
      
-     //int mathX = Math.round(thisX);
      int throttleFWD = Math.round((thisX * 2) - 14);
      int throttleBK = Math.abs(Math.round((thisX * 2) + 14));
      int throttleRIGHT = Math.round((thisY * 2) - 14);
      int throttleLEFT = Math.abs(Math.round((thisY * 2) + 14));
-     //int mathY = Math.round(thisY);
      
      //We need to have a roll and a pitch component.  It seems we can ignore the z component, as its
      //value will not be needed in determining our copter's heading.
      accText.setText("X: " + Math.round(thisX) + ";  Y:" + Math.round(thisY) + ";  Z: " + Math.round(thisZ));
-     //directmodeTextLR.setText("STABLE");
+
+     //***********************MODE = DIRECT*************************
      //Handle the stable FORWARD/BACKWARD case.
      if((Math.round(thisX) < 7) && (Math.round(thisX) > -7)){
     	 directmodeTextFB.setText("STABLE");
@@ -110,79 +114,84 @@ public class FlightActivity extends Activity implements
      else{
     	 //Handle the backward case
     	 if(Math.round(thisX) <= -7){
+    		 directmodeTextFB.setText("BACKWARD: " + throttleBK + "%");
     		 if(Math.round(thisX) < -60)
     			 directmodeTextFB.setText("BACKWARD: 100%");
-    		 directmodeTextFB.setText("BACKWARD: " + throttleBK + "%");
     	 }
     	 //Handle the forward case
     	 else{
+    		 directmodeTextFB.setText("FORWARD: " + throttleFWD + "%");
     		 if(Math.round(thisX) > 60)
     			 directmodeTextFB.setText("FORWARD: 100%");
-    		 directmodeTextFB.setText("FORWARD: " + throttleFWD + "%");
     	 }
      }
+     
+     //Handle the stable LEFT/RIGHT case.
      if((Math.round(thisY) < 7) && (Math.round(thisY) > -7)){
     	 directmodeTextLR.setText("STABLE");
      }
      else{
-    	 //Handle the backward case
+    	 //Handle the right case
     	 if(Math.round(thisY) <= -7){
+    		 directmodeTextLR.setText("RIGHT: " + throttleLEFT + "%");
     		 if(Math.round(thisY) < -60)
     			 directmodeTextLR.setText("RIGHT: 100%");
-    		 directmodeTextLR.setText("RIGHT: " + throttleLEFT + "%");
     	 }
-    	 //Handle the forward case
+    	 //Handle the left case
     	 else{
+    		 directmodeTextLR.setText("LEFT: " + throttleRIGHT + "%");
     		 if(Math.round(thisY) > 60)
     			 directmodeTextLR.setText("LEFT: 100%");
-    		 directmodeTextLR.setText("LEFT: " + throttleRIGHT + "%");
     	 }
      }
-     //directmodeTextLR.setText("X: " + Math.round(thisX));
-     //Check the stable FORWARD/BACKWARD case
-     /*if((mathX < 8) && (mathX > -8)){
-    	 directmodeTextFB.setText("STABLE");
+   //***********************MODE = STAGES*************************
+     if((Math.round(thisX) < 7) && (Math.round(thisX) > -7)){
+    	 stagesmodeTextFB.setText("STABLE");
      }
      else{
-    	 //Handle the positive/forward case
-    	 if(mathX >= 8){
-    		 if(mathX >= 60){
-        		 directmodeTextFB.setText("FORWARD: 100%");
+    	 if(Math.round(thisX) < -7){
+    		 stagesmodeTextFB.setText("BACKWARD: SLOW");
+    		 if(Math.round(thisX) < -25){
+    			 stagesmodeTextFB.setText("BACKWARD: NORMAL");
+    			 if(Math.round(thisX) < -43){
+    				 stagesmodeTextFB.setText("BACKWARD: FAST");
+    			 }
     		 }
-    		 directmodeTextFB.setText("FORWARD: " + ((mathX * 1.923) - (15.23)) + "%");
     	 }
-    	 else{
-    		 if(mathX <= 60){
-    			 directmodeTextFB.setText("BACKWARD: 100%");
+    	 if(Math.round(thisX) > 7){
+    		 stagesmodeTextFB.setText("FORWARD: SLOW");
+    		 if(Math.round(thisX) > 25){
+    			 stagesmodeTextFB.setText("FORWARD: NORMAL");
+    			 if(Math.round(thisX) > 43){
+    				 stagesmodeTextFB.setText("FORWARD: FAST");
+    			 }
     		 }
-    		 directmodeTextFB.setText("BACKWARD: " + ((mathX * 1.923) - (15.23)) + "%");
     	 }
-    	 
-    	 
      }
-     if((Math.round(thisY) < 8) && (Math.round(thisY) > -8)){
-    	 directmodeTextLR.setText("STABLE");
-     }
-     if((mathY < 8) && (mathY > -8)){
-    	 directmodeTextLR.setText("STABLE");
-     }
-     else{
-    	 //Handle the positive/forward case
-    	 if(mathY >= 8){
-    		 if(mathY >= 60){
-        		 directmodeTextLR.setText("LEFT: 100%");
-    		 }
-    		 directmodeTextLR.setText("LEFT: " + ((mathY * 1.923) - (15.23)) + "%");
-    	 }
-    	 else{
-    		 if(mathY <= 60){
-    			 directmodeTextLR.setText("RIGHT: 100%");
-    		 }
-    		 directmodeTextLR.setText("RIGHT: " + ((mathY * 1.923) - (15.23)) + "%");
-    	 }
-     }*/
-     //stagesmodeText.setText("Stages...");
      
+     if((Math.round(thisY) < 7) && (Math.round(thisY) > -7)){
+    	 stagesmodeTextLR.setText("STABLE");
+     }
+     else{
+    	 if(Math.round(thisY) < -7){
+    		 stagesmodeTextLR.setText("RIGHT: SLOW");
+    		 if(Math.round(thisY) < -25){
+    			 stagesmodeTextLR.setText("RIGHT: NORMAL");
+    			 if(Math.round(thisY) < -43){
+    				 stagesmodeTextLR.setText("RIGHT: FAST");
+    			 }
+    		 }
+    	 }
+    	 if(Math.round(thisY) > 7){
+    		 stagesmodeTextLR.setText("LEFT: SLOW");
+    		 if(Math.round(thisY) > 25){
+    			 stagesmodeTextLR.setText("LEFT: NORMAL");
+    			 if(Math.round(thisY) > 43){
+    				 stagesmodeTextLR.setText("LEFT: FAST");
+    			 }
+    		 }
+    	 }
+     }
      oldX = x;
      oldY = y;
      oldZ = z;

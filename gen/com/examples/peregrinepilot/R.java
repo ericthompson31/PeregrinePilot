@@ -11,11 +11,13 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int loadscreen=0x7f020000;
-        public static final int peregrinepilot_flightcontrol=0x7f020001;
-        public static final int peregrinepilot_land_menubg=0x7f020002;
-        public static final int peregrinepilot_launcher=0x7f020003;
-        public static final int peregrinepilot_menubg=0x7f020004;
+        public static final int ic_launcher=0x7f020000;
+        public static final int loadscreen=0x7f020001;
+        public static final int peregrineintro=0x7f020002;
+        public static final int peregrinepilot_flightcontrol=0x7f020003;
+        public static final int peregrinepilot_land_menubg=0x7f020004;
+        public static final int peregrinepilot_launcher=0x7f020005;
+        public static final int peregrinepilot_menubg=0x7f020006;
     }
     public static final class id {
         public static final int LinearLayout01=0x7f050011;
@@ -55,15 +57,15 @@ public final class R {
         public static final int TextView17=0x7f050034;
         public static final int TextView18=0x7f05002e;
         public static final int TextView19=0x7f050030;
-        public static final int TextView21=0x7f05003e;
+        public static final int TextView21=0x7f050041;
         public static final int TextView22=0x7f05001a;
         public static final int TextView23=0x7f05001c;
         public static final int TextView24=0x7f050016;
         public static final int TextView25=0x7f050018;
         public static final int accText=0x7f050038;
-        public static final int button1=0x7f050045;
-        public static final int button2=0x7f050043;
-        public static final int button3=0x7f050044;
+        public static final int button1=0x7f050048;
+        public static final int button2=0x7f050046;
+        public static final int button3=0x7f050047;
         public static final int digitalClock1=0x7f050020;
         public static final int directmodeFB =0x7f05003a;
         public static final int directmodeLR=0x7f05003b;
@@ -76,17 +78,20 @@ public final class R {
         public static final int linearLayout1=0x7f05001e;
         public static final int linearLayout2=0x7f050005;
         public static final int linearLayout3=0x7f050004;
-        public static final int linearLayout4=0x7f050040;
+        public static final int linearLayout4=0x7f050043;
         public static final int linearLayout5=0x7f050036;
-        public static final int linearLayout6=0x7f05003d;
+        public static final int linearLayout6=0x7f050040;
         public static final int linearLayout7=0x7f050003;
-        public static final int progress=0x7f050042;
+        public static final int progress=0x7f050045;
         public static final int relativeLayout1=0x7f050001;
-        public static final int relativeLayout2=0x7f05003c;
+        public static final int relativeLayout2=0x7f05003f;
         public static final int relativeLayout3=0x7f050002;
-        public static final int seek=0x7f050041;
+        public static final int seek=0x7f050044;
+        public static final int stagesmodeFB=0x7f05003d;
+        public static final int stagesmodeLR=0x7f05003e;
+        public static final int stagesmodeTextView=0x7f05003c;
         public static final int textView1=0x7f050039;
-        public static final int tracking=0x7f05003f;
+        public static final int tracking=0x7f050042;
         public static final int tv1=0x7f050000;
     }
     public static final class layout {

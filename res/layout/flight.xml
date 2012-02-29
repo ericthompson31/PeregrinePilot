@@ -396,6 +396,23 @@
                     android:layout_height="wrap_content"
                     android:text="TextView" />
 
+				<TextView
+                    android:id="@+id/stagesmodeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stages Mode:" />
+
+                <TextView
+                    android:id="@+id/stagesmodeFB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" /> 
+
+                <TextView
+                    android:id="@+id/stagesmodeLR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
             </LinearLayout>
 
         </LinearLayout>
