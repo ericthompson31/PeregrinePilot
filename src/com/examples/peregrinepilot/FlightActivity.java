@@ -43,10 +43,15 @@ public class FlightActivity extends Activity implements
 	private TextView directmodeTextFB;
 	private TextView stagesmodeTextLR;
 	private TextView stagesmodeTextFB;
+	private TextView dampmodeTextLR;
+	private TextView dampmodeTextFB;
 	private SensorManager myManager;
 	private List<Sensor> sensors;
 	private Sensor accSensor;
 	private float oldX, oldY, oldZ = 0f;
+	private int dampVal; //Value to damp flight adjustments
+	private TextView dampValTextFB;
+	int counter = 0;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +72,9 @@ public class FlightActivity extends Activity implements
 		directmodeTextFB = (TextView) findViewById(R.id.directmodeFB);
 		stagesmodeTextLR = (TextView) findViewById(R.id.stagesmodeLR);
 		stagesmodeTextFB = (TextView) findViewById(R.id.stagesmodeFB);
+		dampmodeTextLR = (TextView) findViewById(R.id.dampmodeLR);
+		dampmodeTextFB = (TextView) findViewById(R.id.dampmodeFB);
+		dampValTextFB = (TextView) findViewById(R.id.dampValText);
 
 		// Set Sensor + Manager
 		myManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
@@ -92,6 +100,7 @@ public class FlightActivity extends Activity implements
 
 	private void updateTV(float x, float y, float z)
     {
+	 float deltaThrottleFWD = 30*(x - oldX);
      float thisX = x - oldX * 10;
      float thisY = y - oldY * 10;
      float thisZ = z - oldZ * 10;
@@ -100,6 +109,7 @@ public class FlightActivity extends Activity implements
      int throttleBK = Math.abs(Math.round((thisX * 2) + 14));
      int throttleRIGHT = Math.round((thisY * 2) - 14);
      int throttleLEFT = Math.abs(Math.round((thisY * 2) + 14));
+     
      
      //We need to have a roll and a pitch component.  It seems we can ignore the z component, as its
      //value will not be needed in determining our copter's heading.
@@ -192,9 +202,27 @@ public class FlightActivity extends Activity implements
     		 }
     	 }
      }
-     oldX = x;
-     oldY = y;
-     oldZ = z;
+   //*********************MODE = DAMPENING***********************
+     
+     if(deltaThrottleFWD > 12 || deltaThrottleFWD < -12){
+    	 dampmodeTextFB.setText("MAX RATE OF CHANGE");
+     }
+     if(deltaThrottleFWD < 3 && deltaThrottleFWD > -3){
+    	 dampmodeTextFB.setText("NOT CHANGING");
+     }
+     else{
+    	 counter++;
+    	 if(counter == 5){
+    		 dampmodeTextFB.setText(String.valueOf(deltaThrottleFWD));
+    		 counter = 0;
+    	 }
+    	 
+     }
+    dampVal = 1;
+     
+    oldX = x;
+    oldY = y;
+    oldZ = z;
     }
 
 	private final SensorEventListener mySensorListener = new SensorEventListener() {

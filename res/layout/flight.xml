@@ -383,18 +383,29 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Direct Mode:" />
-
-                <TextView
-                    android:id="@+id/directmodeFB "
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/directmodeLR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/directmodeFB "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="TextView" />
+
+                    <TextView
+                        android:id="@+id/directmodeLR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:text="TextView" />
+
+                </RelativeLayout>
 
 				<TextView
                     android:id="@+id/stagesmodeTextView"
@@ -402,17 +413,79 @@
                     android:layout_height="wrap_content"
                     android:text="Stages Mode:" />
 
-                <TextView
-                    android:id="@+id/stagesmodeFB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" /> 
+				<RelativeLayout
+				    android:id="@+id/relativeLayout4"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content" >
+
+					<TextView
+					    android:id="@+id/stagesmodeFB"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_alignParentLeft="true"
+					    android:layout_alignParentTop="true"
+					    android:text="TextView" />
+
+					<TextView
+					    android:id="@+id/stagesmodeLR"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_alignParentRight="true"
+					    android:layout_alignParentTop="true"
+					    android:text="TextView" />
+
+				</RelativeLayout>
 
                 <TextView
-                    android:id="@+id/stagesmodeLR"
+                    android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="Dampening Mode:" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/dampmodeFB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="TextView" />
+
+                    <TextView
+                        android:id="@+id/dampmodeLR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:text="TextView" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Update #"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/dampValText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medium Text"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
